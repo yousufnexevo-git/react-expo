@@ -6,6 +6,12 @@ import QuantityCounter from '../components/QuantityCounter';
 
 export default function RedirectPage() {
   return (
+    <>
+    <StatusBar
+            barStyle="dark-content"
+        backgroundColor="#ff8c42" 
+        transcluent={true}
+          />
 <ScrollView>
     <View style={styles.container}>
       <TouchableOpacity onPress={() => router.back()}>
@@ -26,7 +32,7 @@ export default function RedirectPage() {
                                                         </TouchableOpacity>
       </View>
       </View>
-      </ScrollView>
+      </ScrollView></>
   );
 }
 
@@ -63,6 +69,7 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
     width: '70%',
     marginTop: 40,
+    marginBottom: 100,
   },
   buttonText: {
     color: '#FFA451',

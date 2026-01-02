@@ -8,8 +8,7 @@ export default function App() {
     <>
       <StatusBar
         barStyle="dark-content"
-        backgroundColor="#ffffff" 
-        translucent={false}
+        backgroundColor="#ff8c42" 
       />
 
       <ScrollView style={styles.container}>
@@ -32,7 +31,7 @@ export default function App() {
         <View style={styles.searchBox}>
           <Ionicons name="search-outline" size={18} color="#999" />
           <TextInput
-            placeholder="Search for fruit salad combos"
+            placeholder="Search for fruit salad combos"   placeholderTextColor="gray"
             style={styles.input}
           />
           <Ionicons name="options-outline" size={18} />
@@ -122,7 +121,7 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: '#fff',
     padding: 10,
-    marginTop: Platform.OS === 'android' ? 35 : 0,
+    marginTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0,
   },
   header: {
     flexDirection: 'row',
