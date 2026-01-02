@@ -26,9 +26,9 @@ export default function DishOne() {
                           <Text style={{ fontSize: 18, fontWeight: '600' }}>Price ₹ 279</Text>
                 </View>
                   <Text style={styles.description}>Berry mango salad blends sweet mangoes with juicy strawberries, blueberries, and raspberries, creating a colorful mix of flavors and textures. Light, refreshing, and vibrant, it’s perfect for summer meals, healthy snacking, or brightening gatherings with natural sweetness.</Text>
-                  </View>
+          </View>
         </View>
-        <View>
+      <View>
                   <View style={styles.bottomContent}><QuantityCounter price={279} /></View>
                   <TouchableOpacity style={styles.button} onPress={() => router.push('/redirectPage')}><Text style={styles.buttonText}>Place Order</Text>
                                         </TouchableOpacity>

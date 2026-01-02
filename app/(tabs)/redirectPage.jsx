@@ -2,16 +2,9 @@ import { View, Text, StyleSheet, Image, ScrollView} from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { router } from 'expo-router';
 import { TouchableOpacity } from 'react-native';
-import QuantityCounter from '../components/QuantityCounter';
 
 export default function RedirectPage() {
   return (
-    <>
-    <StatusBar
-            barStyle="dark-content"
-        backgroundColor="#ff8c42" 
-        transcluent={true}
-          />
 <ScrollView>
     <View style={styles.container}>
       <TouchableOpacity onPress={() => router.back()}>
@@ -32,7 +25,7 @@ export default function RedirectPage() {
                                                         </TouchableOpacity>
       </View>
       </View>
-      </ScrollView></>
+      </ScrollView>
   );
 }
 
